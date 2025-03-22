@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Katik - Citra</title>
+    <title>Katik - Tracreate vs 1.1.1 @2025</title>
 
     <!--CSS External-->
     <link rel="stylesheet" href="CSS\style.css"
@@ -10,24 +10,23 @@
 <body>
     <!--Header-->
     <header class="main-header">
-        <h1> Katik (Kalkulator Matematik) </h1>
+        <h1> KATIK (KALKULATOR MATEMATIK) </h1>
     </header>
 
     <!--Main Content-->
     <main>
-        <header>
+        <header class=" style">
             <h1> Welcome to Katik</h1>
         </header>
-        <p> Hai Sobat Selamat Datang di Kaltik</p>
-        <P> Aplikasi website kalkulator elektronik adalah sebuah alat berbasis web yang dirancang untuk mempermudah perhitungan matematis secara cepat dan akurat. <br>
-            Dengan tampilan yang sederhana dan intuitif,kalkulator ini sangat berguna bagi pelajar, profesional, maupun masyarakat umum <br>
-            yang membutuhkan perhitungan instan tanpa harus menggunakan kalkulator fisik.<br>
-            Selain itu, dengan dukungan teknologi web modern, aplikasi ini dapat diakses dari berbagai perangkat tanpa perlu mengunduh atau menginstal
+        <p class=" p-main"> Hai Mathematic Lover"s Selamat Datang di Katik</p>
+        <P class=" p-sub"> Aplikasi website kalkulator elektronik ini merupakan alat berbasis web yang dirancang untuk mempermudah perhitungan matematis secara cepat dan akurat. <br>
+            Dengan tampilan yang sederhana dan intuitif yang membutuhkan perhitungan instan tanpa harus menggunakan kalkulator fisik.<br>
+            Selain itu, dengan dukungan teknologi web modern, aplikasi ini dapat diakses dari berbagai perangkat tanpa perlu mengunduh atau menginstal.
         </P>
     <!--navigasi fitur-->
         <div class="nav-fitur">
             <a href="" class="nav-fitur-active">persegi</a>
-            <a href="" class="nav-fitur-non-active">persegi</a>
+            <a href="" class="nav-fitur-non-active">persegi panjang</a>
         </div>
         <!--Section Luas-->
          <section>
@@ -35,9 +34,25 @@
                 <h1> Luas Persegi Panjang</h1>
             </header>
          <!--Gambar Luas-->
-             <div class="section-image"></div>
+             <img class="section-image1"></img>
         <!--Konten Perhitungan-->
-            <div class="calculate-content"></div>
+            <div class="calculate-content">
+                <p>Rumus Luas Persegi Yaitu:</p>
+                <p>Luas= S*S</p>
+                <P>Dimana: <br> S= Sisi</P>
+                <p class="header-sub"> Hitung Luas Persegi</p>
+                <!--JavaScript masih salah semua-->
+                <label for="sisi" class="form-label"><strong>Masukkan Nilai Sisi:</strong></label>
+                <input type="number" id="sisi" class="form-control text-center w-50 mx-auto" placeholder="Nilai Sisi">
+                <button class="btn btn-primary mt-3" onclick="hitungLuas()">Hitung</button>
+                <button class="btn btn-warning mt-3" onclick="resetForm()">Reset</button>
+                <h3 class="mt-3">Hasil Perhitungan:</h3>
+                <p id="rumus" class="fw-bold"></p>
+                <p id="perhitungan" class="fw-bold"></p>
+                <p id="hasil" class="fw-bold"></p>
+
+            </div>
+
         </section>
 
         <!--Section Keliling-->
@@ -46,9 +61,21 @@
                   <h1>Keliling Persegi</h1>
              </header>
          <!--Gambar Keliling-->
-            <div class="section-image"></div>
+            <img class="section-image2"></img>
          <!--Konten Perhitungan-->
-            <div class="calculate-content"></div>
+            <div class="calculate-content">
+                <p>Rumus Keliling Persegi Yaitu:</p>
+                <p>Keliling= 4*S</p>
+                <P>Dimana: <br> K= Keliling <br> S= Sisi</P>
+                <p class="header-sub"> Hitung Keliling Persegi</p>
+                <!--JavaScript masih salah semua-->
+                <input type="number" id="sisi" class="form-control text-center w-50 mx-auto" placeholder="Nilai Sisi">
+                <button class="btn btn-primary mt-3" onclick="hitungkeliling()">Hitung</button>
+                <button class="btn btn-warning mt-3" onclick="resetForm()">Reset</button>
+                <h3 class="mt-3">Hasil: <span id="hasil">-</span></h3>
+            </div>
+        
+
         </section>
     </main>
 
