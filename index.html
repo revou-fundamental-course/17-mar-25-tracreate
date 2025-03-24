@@ -35,23 +35,22 @@
             </header>
          <!--Gambar Luas-->
              <img class="section-image1"></img>
-        <!--Konten Perhitungan-->
-            <div class="calculate-content">
-                <p>Rumus Luas Persegi Yaitu:</p>
-                <p>Luas= S*S</p>
-                <P>Dimana: <br> S= Sisi</P>
-                <p class="header-sub"> Hitung Luas Persegi</p>
-                <!--JavaScript masih salah semua-->
-                <label for="sisi" class="form-label"><strong>Masukkan Nilai Sisi:</strong></label>
-                <input type="number" id="sisi" class="form-control text-center w-50 mx-auto" placeholder="Nilai Sisi">
-                <button class="btn btn-primary mt-3" onclick="hitungLuas()">Hitung</button>
-                <button class="btn btn-warning mt-3" onclick="resetForm()">Reset</button>
-                <h3 class="mt-3">Hasil Perhitungan:</h3>
-                <p id="rumus" class="fw-bold"></p>
-                <p id="perhitungan" class="fw-bold"></p>
-                <p id="hasil" class="fw-bold"></p>
-
+        <!-- Hitung Luas Persegi -->
+        <div class="calculate-content">
+            <p>Rumus Luas Persegi Yaitu:</p>
+            <p>Luas = S × S</p>
+            <p>Dimana: <br> S = Sisi</p>
+            <p class="header-sub">Hitung Luas Persegi</p>
+            
+            <div class="calculate-content-sub">
+                <label>Masukkan Nilai Sisi:</label>
+                <input type="number" id="sisi-luas" placeholder="Nilai Sisi">
+                <button onclick="hitungLuas()">Hitung</button>
+                <button onclick="resetLuas()">Reset</button>
+                <p id="hasil-luas"></p>
             </div>
+        </div>
+
 
         </section>
 
@@ -62,19 +61,21 @@
              </header>
          <!--Gambar Keliling-->
             <img class="section-image2"></img>
-         <!--Konten Perhitungan-->
-            <div class="calculate-content">
-                <p>Rumus Keliling Persegi Yaitu:</p>
-                <p>Keliling= 4*S</p>
-                <P>Dimana: <br> K= Keliling <br> S= Sisi</P>
-                <p class="header-sub"> Hitung Keliling Persegi</p>
-                <!--JavaScript masih salah semua-->
-                <input type="number" id="sisi" class="form-control text-center w-50 mx-auto" placeholder="Nilai Sisi">
-                <button class="btn btn-primary mt-3" onclick="hitungkeliling()">Hitung</button>
-                <button class="btn btn-warning mt-3" onclick="resetForm()">Reset</button>
-                <h3 class="mt-3">Hasil: <span id="hasil">-</span></h3>
+         <!-- Hitung Keliling Persegi -->
+        <div class="calculate-content">
+            <p>Rumus Keliling Persegi Yaitu:</p>
+            <p>Keliling = 4 × S</p>
+            <p>Dimana: <br> S = Sisi</p>
+            <p class="header-sub">Hitung Keliling Persegi</p>
+            
+            <div class="calculate-content-sub">
+                <label>Masukkan Nilai Sisi:</label>
+                <input type="number" id="sisi-keliling" placeholder="Nilai Sisi">
+                <button onclick="hitungKeliling()">Hitung</button>
+                <button onclick="resetKeliling()">Reset</button>
+                <p id="hasil-keliling"></p>
             </div>
-        
+        </div>
 
         </section>
     </main>
@@ -83,5 +84,8 @@
     <footer>
         <p>Made By Tracreate vr 1.1.1 @2025</p>
     </footer>
+    <!--Javascript Eksternal-->
+    <script src="js/script.js"></script>
+
 </body>
 </html>
