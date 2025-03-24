@@ -12,11 +12,11 @@ main {
 
 .main-header>h1 {
     padding: 10px 5px 8px 5px;
-    font: size 42px;
+    font: size 43px;
     text-align: center;
     background-color: skyblue;
     margin: 0;
-    font-family: monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 
 }
@@ -27,12 +27,16 @@ main {
     text-align: center;
     background-color: cornsilk;
     padding: 0;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px
 }
 
 .p-main{
     background-color: lightpink;
     text-align: center;
     font-size: 22px;
+    border-radius: 10px;
     }
 
 .p-sub{
@@ -52,7 +56,8 @@ main{
 
 .nav-fitur{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    color: black;
 
 }
 
