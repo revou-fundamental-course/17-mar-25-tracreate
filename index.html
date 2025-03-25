@@ -39,7 +39,7 @@
         <div class="calculate-content">
             <p style="justify-self: left;">Rumus Luas Persegi Yaitu:</p>
             <p style=" font-weight: bolder;">Luas = S × S</p>
-            <p style="justify-self: left;">Dimana: <br> L= Luas <br> S = Sisi </p>
+            <p style="justify-self: center;">Dimana: <br> L= Luas <br> S = Sisi </p>
             <p class="header-sub" style="font-weight: bolder;">Hitung Luas Persegi</p>
             
             <div class="calculate-content-sub">
@@ -65,7 +65,7 @@
         <div class="calculate-content">
             <p style="justify-self: left;">Rumus Keliling Persegi Yaitu:</p>
             <p style="font-weight: bolder;">Keliling = 4 × S</p>
-            <p style="justify-self: left;">Dimana: <br>K= Keliling <br>S = Sisi</p>
+            <p style="justify-self: center;">Dimana: <br>K= Keliling <br>S = Sisi</p>
             <p class="header-sub" style="font-weight: bolder;">Hitung Keliling Persegi</p>
             
             <div class="calculate-content-sub">
@@ -85,20 +85,21 @@
                 <h1> Luas Persegi Panjang</h1>
             </header>
          <!--Gambar Luas Persegi Panjang-->
-             <img class=""></img>
+             <img class="section-image3"></img>
         <!-- Hitung Luas Persegi Panjang -->
         <div class="calculate-content">
             <p style="justify-self: left;">Rumus Luas Persegi Panjang Yaitu:</p>
             <p style=" font-weight: bolder;">Luas = P × L</p>
-            <p style="justify-self: left;">Dimana: <br> L= Luas <br> P = Panjang <br> L= Lebar </p>
+            <p style="justify-self: center;">Dimana: <br> L= Luas <br> P = Panjang <br> L= Lebar </p>
             <p class="header-sub" style="font-weight: bolder;">Hitung Luas Persegi Panjang</p>
             
             <div class="calculate-content-sub">
                 <label>Masukkan Nilai Sisi:</label>
-                <input style="width: 55%" type="number" id="sisi-luas" placeholder="Nilai Sisi">
-                <button style="background-color: skyblue" onclick="hitungLuas()">Hitung</button>
-                <button style="background-color: cornsilk" onclick="resetLuas()">Reset</button>
-                <p id="hasil-luas"></p>
+                <input style="width: 25%" type="number" id="panjang-luaspersegipanjang" placeholder="Nilai Panjang">
+                <input style="width: 25%" type="number" id="lebar-luaspersegipanjang" placeholder="Nilai Lebar">
+                <button style="background-color: skyblue" onclick="hitungLuasPersegiPanjang()">Hitung</button>
+                <button style="background-color: cornsilk" onclick="resetLuasPersegiPanjang()">Reset</button>
+                <p id="hasil-luaspersegipanjang"></p>
             </div>
         </div>
 
@@ -109,21 +110,22 @@
               <header class="section-header">
                   <h1>Keliling Persegi Panjang</h1>
              </header>
-         <!--Gambar Keliling-->
-            <img class=""></img>
+         <!--Gambar Keliling Persegi Panjang-->
+            <img class="section-image4"></img>
          <!-- Hitung Keliling Persegi -->
         <div class="calculate-content">
             <p style="justify-self: left;">Rumus Keliling Persegi Panjang Yaitu:</p>
             <p style="font-weight: bolder;">Keliling = 2 × (P + L)</p>
-            <p style="justify-self: left;">Dimana: <br>K= Keliling <br> P =Panjang <br> L= Lebar</p>
+            <p style="justify-self: center;">Dimana: <br>K= Keliling <br> P =Panjang <br> L= Lebar</p>
             <p class="header-sub" style="font-weight: bolder;">Hitung Keliling Persegi Panjang</p>
             
             <div class="calculate-content-sub">
                 <label>Masukkan Nilai Sisi:</label>
-                <input style="width: 55%" type="number" id="sisi-keliling" placeholder="Nilai Sisi">
-                <button style="background-color: skyblue" onclick="hitungKeliling()">Hitung</button>
-                <button style="background-color: cornsilk" onclick="resetKeliling()">Reset</button>
-                <p id="hasil-keliling"></p>
+                <input style="width: 25%" type="number" id="panjang-kelilingpesegipanjang" placeholder="Nilai Panjang">
+                <input style="width: 25%" type="number" id="lebar-kelilingpesegipanjang" placeholder="Nilai Lebar">
+                <button style="background-color: skyblue" onclick="hitungKelilingPersegiPanjang()">Hitung</button>
+                <button style="background-color: cornsilk" onclick="resetKelilingPersegiPanjang()">Reset</button>
+                <p id="hasil-kelilingpersegipanjang"></p>
             </div>
         </div>
 
