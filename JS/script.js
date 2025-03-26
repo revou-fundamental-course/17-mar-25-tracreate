@@ -1,4 +1,5 @@
 //# Ini JavaScript External
+console.log(JavaScript is Working);
 
 function tampilkan(id) {
     document.getElementById('persegi').classList.add('hidden');
