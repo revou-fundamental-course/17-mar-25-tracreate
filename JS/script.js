@@ -1,5 +1,11 @@
 //# Ini JavaScript External
 
+function tampilkan(id) {
+    document.getElementById('persegi').classList.add('hidden');
+    document.getElementById('persegiPanjang').classList.add('hidden');
+    document.getElementById(id).classList.remove('hidden');
+}
+
 // Fungsi untuk menghitung luas persegi
 function hitungLuas() {
     let sisiLuas = document.getElementById("sisi-luas").value;

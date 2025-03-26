@@ -56,9 +56,19 @@ main{
 
 .nav-fitur{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: black;
 
+}
+
+.nav-fitur a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(232, 92, 139);
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .nav-fitur-active{
@@ -67,7 +77,7 @@ main{
     color: azure;
     padding-top: 16px;
     padding-bottom: 16px;
-    width: 50%;
+    width: 100%;
     align-self: center;
 }
 
@@ -78,7 +88,7 @@ main{
     color: azure;
     padding-top: 16px;
     padding-bottom: 16px;
-    width: 50%;
+    width: 100%;
     align-self: center;
 
 }
@@ -171,4 +181,8 @@ footer{
     font-size: 10px;
     border: 2px solid skyblue;
     margin-top: 5px;
+}
+
+.hidden {
+    display: none;
 }

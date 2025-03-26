@@ -21,14 +21,15 @@
         <p class=" p-main"> Hai Mathematic Lover's Selamat Datang di Katik</p>
         <P class=" p-sub"> Aplikasi website kalkulator elektronik berbasis web apps membantu kamu menghitung luas dan keliling bangun datar dengan mudah. <br>
             Dengan tampilan yang sederhana dan intuitif yang membutuhkan perhitungan instan tanpa harus menggunakan kalkulator fisik,
-            aplikasi ini dapat diakses dari berbagai perangkat tanpa perlu mengunduh atau menginstal.
+            aplikasi ini dapat diakses dari berbagai perangkat tanpa perlu mengunduh atau menginstal.<br> Click Down Bellow!!!
         </P>
     <!--navigasi fitur-->
         <div class="nav-fitur">
-            <a href="" class="nav-fitur-active">PERSEGI</a>
-            <a href="" class="nav-fitur-non-active">PERSEGI PANJANG</a>
+            <a href="#" id="btn-persegi" class="nav-fitur-active" onclick="tampilkan('persegi', this)">PERSEGI</a>
+            <a href="#" id="btn-persegiPanjang" class="nav-fitur-non-active" onclick="tampilkan('persegiPanjang', this)">PERSEGI PANJANG</a>
         </div>
-        <!--Section Luas Persegi-->
+    <!--Section Luas Persegi-->
+    <section id="persegi">
          <section>
             <header class="section-header">
                 <h1> Luas Persegi </h1>
@@ -54,7 +55,7 @@
 
         </section>
 
-        <!--Section Keliling Persegi-->
+    <!--Section Keliling Persegi-->
          <section>
               <header class="section-header">
                   <h1>Keliling Persegi</h1>
@@ -78,8 +79,11 @@
         </div>
 
         </section>
+    </section>
 
-        <!--Section Luas Persegi Panjang-->
+
+    <!--Section Luas Persegi Panjang-->
+    <section id="persegiPanjang" class="hidden">
         <section>
             <header class="section-header">
                 <h1> Luas Persegi Panjang</h1>
@@ -105,7 +109,7 @@
 
         </section>
 
-        <!--Section Keliling Persegi Panjang-->
+    <!--Section Keliling Persegi Panjang-->
          <section>
               <header class="section-header">
                   <h1>Keliling Persegi Panjang</h1>
@@ -130,10 +134,10 @@
         </div>
 
         </section>
-
+    </section>
     </main>
 
-    <!--Footer-->
+    <!--Footer--> 
     <footer>
         <p>Made By Tracreate vr 1.1.1 @2025</p>
     </footer>
